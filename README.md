@@ -9,7 +9,7 @@ After installing JupyterLab:
 
 1. Start the terminal in JupyterLab
 2. Find the folder you would like to download the program to
-3. Enter in the command git clone https://github.com/zogerreng/Small-cryptography-program
+3. Open the terminal and enter "git clone https://github.com/zogerreng/Small-cryptography-program" (quotation marks not included)
 4. Find the folder named "small-cryptography-program" and launch the ipynb file inside
 
 # How to actually use the program
