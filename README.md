@@ -37,8 +37,7 @@ Video explanation [here.](https://www.youtube.com/watch?v=sMOZf4GN3oc)
 
 Again, each letter of the alphabet can be mapped to a number: "a" with 0, "b" with 1, all the way to "z" with 25 (zero-indexed). In the case of a Vigenere cipher, a specific string key is used to encode the plaintext. This key is used to determine the shift for each letter. Take plaintext "abcdefg" with key "test" for example. The key is written so that each letter of the key lines up with its corresponding letter in the plaintext. If the plaintext is larger than the key, the key is repeated multiple times. With our plaintext "abcdefg" and key "test", the key written out with the plaintext would look like "testtes".
 
-abcdefg  
-testtes
+![whyamistillworking](https://user-images.githubusercontent.com/22896094/110892833-c8db1780-82c2-11eb-8e47-35f850f44c0e.PNG)
 
 Notice how each letter lines up with a letter of the plaintext. Each letter in the plaintext is shifted by the amount in the key. Starting at the first letter, "a": "a" would be shifted over 19 spots because "t" corresponds with the number 19. The next letter, "b" would be shifted over 5 spots because "e" corresponds with the number 5. This continues with each letter of the plaintext.
 
