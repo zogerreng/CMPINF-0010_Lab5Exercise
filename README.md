@@ -1,13 +1,55 @@
-# CMPINF-0010_Lab5Exercise
-program with do_something
+# Small cryptography program
 
-This program takes in a string input and an integer input. Using do_something, it converts the string to lowercase, then shifts each letter in the given string over by the integer input (it performs a Caesar shift). For example: given a string input 'abc' and an integer input of 3, the output string would be 'def'. Because each letter in the alphabet corresponds to a number (a = 0, b = 1, etc.) we can shift each letter over by a certain amount. 
+This program is designed to either encode or decode messages using either a Caesar cipher or a Vigenere cipher. The program is written in Python, but must be run via JupyterLab as it is housed in a Jupyter notebook file. Written for Lab 6 exercise of UPitt's CMPINF0010 course.
 
-To do this, each letter is converted to its respective ASCII code. Next, 97 is subtracted from each code because we want each letter to be between 0-25, and lowercase 'a' corresponds with 97 in the ASCII table. The new code gets the shift added to it, then is modded by 25. Finally, 97 is added back to the code and the code is converted back to a letter. 
+# Getting started
 
-After do_something is executed, the results are printed; this includes the initial ASCII code of each letter in the input string, and the new encoded string itself. 
+Instructions on how to install and use JupyterLab can be found [here](https://docs.google.com/document/d/1zYiZpnU86_bE2qfRYLke1lAxukKCpO6idhv-hUQafpU/edit). 
+After installing JupyterLab:
 
-# Group members:
+1. Start the terminal in JupyterLab
+2. Find the folder you would like to download the program to
+3. Enter in the command git clone https://github.com/zogerreng/Small-cryptography-program
+4. Find the folder named "small-cryptography-program" and launch the ipynb file inside
 
-1. Roger Zeng
-2. Julia Livingston
+# How to actually use the program
+
+When you run the ipynb file, you will:
+
+1. Choose between a Caesar or Vigenere cipher, by either entering in the number "1" or "2" (respectively)
+2. Choose between encoding or decoding, by either entering in the number "1" or "2" (respectively)
+3. Depending on whether you chose a Caesar or Vigenere cipher:
+... You will enter the Caesar shift, which can be any integer
+... You will enter a Vigenere key, which is any string with only alphabetical characters in it.
+
+If any of your inputs do not match for each step, the program will not function and you will have to restart it.
+
+# Caesar and Vigenere ciphers explained
+
+## Caesar explained
+
+Each letter of the alphabet can be mapped to a number: "a" with 0, "b" with 1, all the way to "z" with 25 (zero-indexed). Because we can assign a number to every alphabetical letter, a Caesar cipher can shift each letter in a given plaintext by a specific integer amount. This is done by adding the shift to the number corresponding with each letter in the string. For example, take the plaintext "abc". Represented as 012 with a given Caesar shift of 3, 012 becomes 345 becomes "def". In the case that the number added with the shift is greater than 25 (goes past the end of the alphabet), the shift will loop back around from the beginning of the alphabet. For example, the letter "z" shifted 2 becomes "b". 
+
+Video explanation [here.](https://www.youtube.com/watch?v=sMOZf4GN3oc)
+
+## Vigenere explained
+
+Again, each letter of the alphabet can be mapped to a number: "a" with 0, "b" with 1, all the way to "z" with 25 (zero-indexed). In the case of a Vigenere cipher, a specific string key is used to encode the plaintext. This key is used to determine the shift for each letter. Take plaintext "abcdefg" with key "test" for example. The key is written so that each letter of the key lines up with its corresponding letter in the plaintext. If the plaintext is larger than the key, the key is repeated multiple times. With our plaintext "abcdefg" and key "test", the key written out with the plaintext would look like "testtes".
+
+abcdefg
+testtes
+
+Notice how each letter lines up with a letter of the plaintext. Each letter in the plaintext is shifted by the amount in the key. Starting at the first letter, "a": "a" would be shifted over 19 spots because "t" corresponds with the number 19. The next letter, "b" would be shifted over 5 spots because "e" corresponds with the number 5. This continues with each letter of the plaintext.
+
+In case the explanation didn't make sense (it probably didn't) and you actually want to understand it, a video explanation can be seen [here.](https://www.youtube.com/watch?v=zNO4PTlg62k)
+
+# Wonderful contributors + how to contact us
+
+If you have any questions about the program and how it works, or if you'd like to report a bug, please feel free to contact any of us. 
+
+1. Roger Zeng (roz30@pitt.edu)
+2. Julia Livingston (jul126@pitt.edu)
+3. Brady Snyder (bcs66@pitt.edu)
+
+
+
