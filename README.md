@@ -19,8 +19,8 @@ When you run the ipynb file, you will:
 1. Choose between a Caesar or Vigenere cipher, by either entering in the number "1" or "2" (respectively)
 2. Choose between encoding or decoding, by either entering in the number "1" or "2" (respectively)
 3. Depending on whether you chose a Caesar or Vigenere cipher:
-... You will enter the Caesar shift, which can be any integer
-... You will enter a Vigenere key, which is any string with only alphabetical characters in it.
+   You will enter the Caesar shift, which can be any integer
+   You will enter a Vigenere key, which is any string with only alphabetical characters in it.
 
 If any of your inputs do not match for each step, the program will not function and you will have to restart it.
 
