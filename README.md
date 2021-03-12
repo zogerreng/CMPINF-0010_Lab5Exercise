@@ -23,6 +23,8 @@ When you run the ipynb file, you will:
   - You will enter the Caesar shift, which can be any integer
   - You will enter a Vigenere key, which is any string with only alphabetical characters in it.
 
+The resulting string will be outputed. All spaces in the given text will be removed, and all letters will be converted to lowercase. 
+
 If any of your inputs do not match for each step, the program will not function and you will have to restart it.
 
 # Caesar and Vigenere ciphers explained
